@@ -4,6 +4,8 @@
     <head>
 <meta charset="utf-8">
 <style>
+*{padding: 3px; margin: 0px;}
+
     table, tr, th, td {
         border: solid 1px rgb(166, 19, 220);
         border-collapse: collapse; 
@@ -11,50 +13,152 @@
     }
     tr {color: rgb(50, 13, 187);}
     th {color: rgb(180, 130, 233);}
-    h3 {border-left: solid 10px green;
-    padding: 10px;} 
+    h3 {border-left: solid 10px green; margin-left: 300px;
+    padding-left: 10px; font-size: 30px; padding-top: 5px;} 
+
+
+
+header, nav, section, aside, footer {
+		border: solid 1px gray;
+	}
+header {
+	width: 995px; height: 100px;
+	margin-top: 10px;
+}
+
+nav {
+	width: 995px; height: 100px;
+	margin-top: 10px;
+    float: left;
+}
+
+section {
+	width: 650px; height: 700px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 29px;
+}
+
+aside {
+	width: 300px; height: 500px;
+	margin-top: 10px;
+	float: left;
+}
+
+footer {
+	width: 995px; height: 130px;
+	margin-top: 10px;
+}
+.clear {clear: both;}
+
+li {float: left;
+list-style-type: none;}
+
+ul {border: solid 0px red;
+padding: 20px;}
+
+.poem { text-align: center; 
+    display:flex;
+    align-items: center;
+    color: rgb(69, 64, 64);
+    justify-content : center;
+    font-size: 25; }
+
+.poemtitle {font-weight: bold; text-shadow: 2px 2px 8px rgb(229, 206, 255); font-size: 20px;}
+#address {float: left; margin-top: 30px; margin-left: 50px;}
+#customer {float: left; margin-top: 20px; margin-left: 180px; text-align: center; }
+
+
 </style>
     </head>
     <body>
-        <h3>
-            20210312 김민주 2022-1학기 시간표
-        </h3>
-        <table>
-            <tr>
-            <th>시간표</th><th> 월 </th> <th> 화 </th>  <th> 수 </th> <th> 목 </th> <th> 금 </th>
-        </tr>
-        <tr>
-            <th>9:30<br>~<br>10:20</th><td rowspan="8">공강</td> <td>공강</td> <td rowspan="2">21세기 녹색환경문화</td> <td>공강</td> <td rowspan="8">공강</td>
-        </tr>
-            <th>10:30<br>~<br>11:20</th><td rowspan="2">마케팅의이해</td> <td rowspan="2">경영통계</td> 
-        <tr>
-            <th>11:30<br>~<br>12:20</th><td>대학 영어 회화</td>  
-        </tr>
-        <tr>
-            <th>12:30<br>~<br>13:20</th>  <td>공강</td> <td rowspan="2">공강</td> <td rowspan="2">공강</td> 
-        </tr>
-        <tr>
-            <th>13:30<br>~<br>14:20</th>  <td rowspan="2">웹프로그래밍</td>   
-        </tr>
-        <tr>
-            <th>14:30<br>~<br>15:20</th> <td>경영통계</td> <td  rowspan="3">벤처기술개론</td> 
-        </tr>
-        <tr>
-            <th>15:30<br>~<br>16:20</th>  <td rowspan="2">공강</td> <td rowspan="2">리더십</td> 
-        </tr>
-        <tr>
-            <th>16:30<br>~<br>17:20</th> 
-        </tr>
-        <H4> <a href="회원가입 홈페이지.html" target="_blank">
-            회원가입 
-        </a></H4> 
-        </table>
-        <a href="rubato.html">루바토 펜션 안내</a> <br> <br>
-        <a href="호서 행사 안내문.html"> 호서 행사 안내문 </a> <br> <br>
-        <a href="8주차 실습과제 야간개장.html"> 호서 야간 개장</a> <br> <br>
-        <a href="9주차 세일 안내장.html"> 세일 안내장</a> <br> <br>
-        <a href="5월 일정표.html"> 5월 일정표</a> <br> <br>
-        <a href="쇼핑몰 판매 목록.html"> 쇼핑몰 판매 목록</a> <br> <br>
+        <header>
+            <div id="logo">
+                <h3>
+                    20210312 김민주 웹사이트
+                </h3>
+                <p>
+                    <span class="poem">   웹 프로그래밍 </span>
+                </p>
+            
+            </div>
+            <div id="top">
+              
+            </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="rubato.html">루바토 펜션 안내 ㅣ</a></li> 
+                    <li> <a href="호서 행사 안내문.html"> 호서 행사 안내문 ㅣ</a></li> 
+                    <li><a href="8주차 실습과제 야간개장.html"> 호서 야간 개장 ㅣ</a></li> 
+                    <li><a href="9주차 세일 안내장.html"> 세일 안내장 ㅣ</a> </li> 
+                    <li><a href="5월 일정표.html"> 5월 일정표 ㅣ</a></li> 
+                    <li><a href="쇼핑몰 판매 목록.html"> 쇼핑몰 판매 목록 ㅣ</a></li> 
+                    <li> <a href="회원가입 홈페이지.html" target="_blank"> 회원가입 ㅣ</a> </li> 
+                     
+                 </ul>  
+            </nav>
+            <div class='clear'></div>
+            <section>
+                <table>
+                    <tr>
+                    <th>시간표</th><th> 월 </th> <th> 화 </th>  <th> 수 </th> <th> 목 </th> <th> 금 </th>
+                </tr>
+                <tr>
+                    <th>9:30<br>~<br>10:20</th><td rowspan="8">공강</td> <td>공강</td> <td rowspan="2">21세기 녹색환경문화</td> <td>공강</td> <td rowspan="8">공강</td>
+                </tr>
+                    <th>10:30<br>~<br>11:20</th><td rowspan="2">마케팅의이해</td> <td rowspan="2">경영통계</td> 
+                <tr>
+                    <th>11:30<br>~<br>12:20</th><td>대학 영어 회화</td>  
+                </tr>
+                <tr>
+                    <th>12:30<br>~<br>13:20</th>  <td>공강</td> <td rowspan="2">공강</td> <td rowspan="2">공강</td> 
+                </tr>
+                <tr>
+                    <th>13:30<br>~<br>14:20</th>  <td rowspan="2">웹프로그래밍</td>   
+                </tr>
+                <tr>
+                    <th>14:30<br>~<br>15:20</th> <td>경영통계</td> <td  rowspan="3">벤처기술개론</td> 
+                </tr>
+                <tr>
+                    <th>15:30<br>~<br>16:20</th>  <td rowspan="2">공강</td> <td rowspan="2">리더십</td> 
+                </tr>
+                <tr>
+                    <th>16:30<br>~<br>17:20</th> 
+                </tr>
+                
+                </table>
+            </section>
+            <aside>
+                <span class="poem">
+            
+               <span class="poemtitle"><br>너의 우울이 길다</span> </span><br><br>
+               <span class="poem">
+                  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+               황경민<br> <br>
+               너의 우울이 길다<br><br>
+               후회가 체념이 무기력이 너무 길다<br><br>
+               보아라<br><br>
+               큰 바람이 불었고<br><br>
+               세계는 그대로가 아니냐<br><br>
+               네 안에서 부는 바람에<br><br>
+               너는 너무 오래 흔들린다.<br><br>
+               
+            </span>
+            </aside>
+            <div class='clear'></div>
+            <footer>
+                <div id="address">
+                   호서대학교 (31066) 충청남도 천안시 동남구 호서대길<br> <br>
+                    <img src="img/call.png" width="20">041.560.8114
+                </div>
+                <div id="customer">
+                  디지털 기술 경영학과 20210312 김민주 <br>
+                  joory113@naver.com 
+                </div>
+            </footer>
+      
+  
 
 
     </body>
