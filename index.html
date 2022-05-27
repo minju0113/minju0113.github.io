@@ -5,49 +5,57 @@
 <meta charset="utf-8">
 <style>
 *{padding: 3px; margin: 0px;}
-
+body {background-color: rgb(238, 234, 234);}
     table, tr, th, td {
-        border: solid 1px rgb(166, 19, 220);
+        border: solid 3px rgba(243, 240, 245, 0.448);
         border-collapse: collapse; 
         padding: 8px;
+        width: 600px;
+       
     }
-    tr {color: rgb(50, 13, 187);}
-    th {color: rgb(180, 130, 233);}
+    tr {color: rgb(17, 17, 17);}
+    th {color: rgb(240, 240, 241); background-color: black;}
     h3 {border-left: solid 10px green; margin-left: 300px;
     padding-left: 10px; font-size: 30px; padding-top: 5px;} 
 
+table td:hover {background-color: skyblue;}
 
-
-header, nav, section, aside, footer {
-		border: solid 1px gray;
+ nav, section, aside, footer {
+		border: solid 0px gray;
 	}
 header {
 	width: 995px; height: 100px;
 	margin-top: 10px;
+    border-bottom: solid 3px black;
 }
 
 nav {
-	width: 995px; height: 100px;
+	width: 995px; height: 80px;
 	margin-top: 10px;
     float: left;
+    background-color: rgb(233, 206, 206);
 }
 
 section {
-	width: 650px; height: 700px;
+	width: 600px; height: 700px;
 	margin-top: 10px;
 	float: left;
 	margin-right: 29px;
+    background-color: rgb(201, 192, 192);
 }
 
 aside {
-	width: 300px; height: 500px;
+	width: 350px; height: 500px;
 	margin-top: 10px;
 	float: left;
+    background-color: rgb(202, 203, 203);
 }
 
 footer {
-	width: 995px; height: 130px;
+	width: 995px; height: 120px;
 	margin-top: 10px;
+    background-image: url(img/logo1.jpg); 
+    margin-bottom: 50px;
 }
 .clear {clear: both;}
 
@@ -64,9 +72,12 @@ padding: 20px;}
     justify-content : center;
     font-size: 25; }
 
-.poemtitle {font-weight: bold; text-shadow: 2px 2px 8px rgb(229, 206, 255); font-size: 20px;}
-#address {float: left; margin-top: 30px; margin-left: 50px;}
-#customer {float: left; margin-top: 20px; margin-left: 180px; text-align: center; }
+.poemtitle {font-weight: bold; text-shadow: 2px 2px 8px rgb(85, 84, 86); font-size: 20px;}
+#address {float: left; margin-top: 30px; margin-left: 50px; background-color: white; } 
+#me {float: left; margin-top: 30px; margin-left: 180px; text-align: 
+    center; background-color: white; }
+
+.red {color: red;}
 
 
 </style>
@@ -105,14 +116,14 @@ padding: 20px;}
                     <th>시간표</th><th> 월 </th> <th> 화 </th>  <th> 수 </th> <th> 목 </th> <th> 금 </th>
                 </tr>
                 <tr>
-                    <th>9:30<br>~<br>10:20</th><td rowspan="8">공강</td> <td>공강</td> <td rowspan="2">21세기 녹색환경문화</td> <td>공강</td> <td rowspan="8">공강</td>
+                    <th>9:30<br>~<br>10:20</th><td rowspan="8"><span class="red">공강</span></td> <td><span class="red">공강</span></td> <td rowspan="2">21세기 녹색환경문화</td> <td><span class="red">공강</span></td> <td rowspan="8"><span class="red">공강</span></td>
                 </tr>
                     <th>10:30<br>~<br>11:20</th><td rowspan="2">마케팅의이해</td> <td rowspan="2">경영통계</td> 
                 <tr>
                     <th>11:30<br>~<br>12:20</th><td>대학 영어 회화</td>  
                 </tr>
                 <tr>
-                    <th>12:30<br>~<br>13:20</th>  <td>공강</td> <td rowspan="2">공강</td> <td rowspan="2">공강</td> 
+                    <th>12:30<br>~<br>13:20</th>  <td><span class="red">공강</span></td> <td rowspan="2"><span class="red">공강</span></td> <td rowspan="2"><span class="red">공강</span></td> 
                 </tr>
                 <tr>
                     <th>13:30<br>~<br>14:20</th>  <td rowspan="2">웹프로그래밍</td>   
@@ -121,7 +132,7 @@ padding: 20px;}
                     <th>14:30<br>~<br>15:20</th> <td>경영통계</td> <td  rowspan="3">벤처기술개론</td> 
                 </tr>
                 <tr>
-                    <th>15:30<br>~<br>16:20</th>  <td rowspan="2">공강</td> <td rowspan="2">리더십</td> 
+                    <th>15:30<br>~<br>16:20</th>  <td rowspan="2"><span class="red">공강</span></td> <td rowspan="2">리더십</td> 
                 </tr>
                 <tr>
                     <th>16:30<br>~<br>17:20</th> 
@@ -149,11 +160,11 @@ padding: 20px;}
             <div class='clear'></div>
             <footer>
                 <div id="address">
-                   호서대학교 (31066) 충청남도 천안시 동남구 호서대길<br> <br>
-                    <img src="img/call.png" width="20">041.560.8114
+                   호서대학교 (31066) 충청남도 천안시 동남구 호서대길<br> <br> 
+                    <img src="img/call.png" width="20"><b>041.560.8114</b>
                 </div>
-                <div id="customer">
-                  디지털 기술 경영학과 20210312 김민주 <br>
+                <div id="me">
+                  <b>디지털기술경영학과 20210312 김민주</b> <br> <br>
                   joory113@naver.com 
                 </div>
             </footer>
